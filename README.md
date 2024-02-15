@@ -1,0 +1,2 @@
+# Learning Python and Basic Artificial Intelligence (AI)🤖
+This repository aims to provide resources and information for beginners to learn the Python programming language and basic concepts of Artificial Intelligence. Python is a powerful and widely used programming language employed in a wide range of applications, while Artificial Intelligence is an exciting field encompassing many intriguing concepts and techniques.
