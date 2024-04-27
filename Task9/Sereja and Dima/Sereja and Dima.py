@@ -25,3 +25,37 @@ numbers = [int(num) for num in numbers_input]
 result_array = create_array(n, numbers)
 who_win(result_array)
 print(Sereja_score, Dima_score)
+
+
+######----------------------------------------------------------------###
+##code in codeforces
+##------------------------###
+def who_win(n, array):
+    Sereja_score = 0
+    Dima_score = 0
+    left = 0
+    right = n - 1
+ 
+    for i in range(n):
+        if i % 2 == 0:
+            if array[left] > array[right]:
+                Sereja_score += array[left]
+                left += 1
+            else:
+                Sereja_score += array[right]
+                right -= 1
+        else:
+            if array[left] > array[right]:
+                Dima_score += array[left]
+                left += 1
+            else:
+                Dima_score += array[right]
+                right -= 1
+ 
+    return Sereja_score, Dima_score
+ 
+n = int(input())
+numbers_input = input().split()
+numbers = [int(num) for num in numbers_input]
+Sereja_score, Dima_score = who_win(n, numbers)
+print(Sereja_score, Dima_score)
