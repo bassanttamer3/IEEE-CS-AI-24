@@ -9,7 +9,7 @@ else:
     print("#Color")
 
 ##-----------------##
-#codegorcse
+#codeforces
 #--------------#
 n, m = map(int, input().split())
  
