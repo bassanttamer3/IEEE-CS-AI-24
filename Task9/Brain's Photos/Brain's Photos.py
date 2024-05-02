@@ -8,3 +8,18 @@ if 'W' in fill_char or 'G' in fill_char or 'B' in fill_char:
 else:
     print("#Color")
 
+##-----------------##
+#codeforces
+#--------------#
+n, m = map(int, input().split())
+ 
+photo = [input().split() for _ in range(n)]
+ 
+colored_colors = {'C', 'M', 'Y'}
+ 
+for row in photo:
+    if any(pixel in colored_colors for pixel in row):
+        print("#Color")
+        break
+else:
+    print("#Black&White")
